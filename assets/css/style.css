@@ -625,12 +625,20 @@ footer.bg-dark li,
   height: 100%;
   top: 0;
   left: 0;
-  background: #292929;
+  background: #000000;
   opacity: 0.3;
   z-index: 2;
 }
 .overlay-heavy:before {
-  opacity: .6;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0.6;
+  z-index: 2;
 }
 .bg-light.overlay:before {
   position: absolute;
@@ -3963,14 +3971,14 @@ video {
   width: 100%;
   height: 100%;
 }
-.overlay .fs-vid-background:before {
+.overlay .fs-vid-background:befre {
   position: absolute;
   content: '';
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: #222222;
+  background: #2222222;
   opacity: 0.5;
   z-index: 2;
 }
