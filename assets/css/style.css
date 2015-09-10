@@ -2194,11 +2194,12 @@ form iframe.mail-list-form {
   font-weight: 700;
 }
 .button-tabs .active .tab-title {
-  background: #e31d3b;
+  background: #292929;
   color: #fff;
 }
 .button-tabs .tab-title:hover {
-  background: #eee;
+  background: #e31d3b;
+  color: #fff;
 }
 .button-tabs .active .tab-title:hover {
   background: #e31d3b;
@@ -4857,6 +4858,9 @@ footer.bg-dark a {
 .mb96 {
   margin-bottom: 96px;
 }
+.mb-96{
+  margin-bottom: -96px;
+}
 .mb104 {
   margin-bottom: 104px;
 }
@@ -4911,14 +4915,23 @@ footer.bg-dark a {
 .mt96 {
   margin-top: 96px;
 }
+.mt-96{
+  margin-top: -96px;
+}
 .mt104 {
   margin-top: 104px;
+}
+.mt-104{
+  margin-top: -104px;
 }
 .mt112 {
   margin-top: 112px;
 }
 .mt120 {
   margin-top: 120px;
+}
+.mt-120{
+  margin-top: -120px;
 }
 .mt160 {
   margin-top: 160px;
@@ -5495,6 +5508,9 @@ footer.bg-dark a {
 .link:hover{
   opacity: 1;
 }
+.bglaw-header, .bglaw-header span{
+  font-family: 'PT Serif', serif;
+}
 h5.bglaw-contact{
   letter-spacing: 0px;
   text-transform: uppercase;
@@ -5502,6 +5518,17 @@ h5.bglaw-contact{
 .bglaw-history{
   text-align: justify;
   padding-right: 6em !important;
+}
+.img-center{
+  background-position: center center;
+}
+p.small-line{
+  width: 8%;
+  border-bottom: .2em solid #e31d3b;
+  display: inline-flex;
+}
+.tab-title{
+  padding: 1px !important;
 }
 @media all and (max-width: 990px) {
   nav.bg-dark .module.widget-handle{
