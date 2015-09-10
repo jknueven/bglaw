@@ -5,7 +5,7 @@
  1. Global Styles
  2. Mixins
  3. Typography
- 4. Colours
+ 4. Colors
  5. Sections
  6. Buttons
  7. Nav
@@ -241,6 +241,8 @@ hr.short-thick {
   z-index: 2;
 }
 /*!---------- 3. TYPOGRAPHY ----------*/
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
 @media all and (max-width: 767px) {
   .text-center-xs {
     text-align: center !important;
@@ -529,7 +531,7 @@ blockquote .author {
     text-align: left !important;
   }
 }
-/*!---------- 4. COLOURS ----------*/
+/*!---------- 4. COLORS ----------*/
 .bg-primary {
   background: #e31d3b !important;
 }
@@ -887,9 +889,9 @@ nav .btn,
   top: 1px;
 }
 .nav-bar {
-  height: 55px;
-  max-height: 55px;
-  line-height: 53px;
+  height: 85px;
+  max-height: 85px;
+  line-height: 83px;
   border-bottom: 1px solid #ccc;
 }
 .nav-bar .module,
@@ -901,7 +903,7 @@ nav .btn,
   height: 55px;
 }
 .logo {
-  max-height: 60%;
+  max-height: 6em;
 }
 .logo-light {
   display: none;
@@ -4879,6 +4881,9 @@ footer.bg-dark a {
 .mt24 {
   margin-top: 24px;
 }
+.mt-24{
+  margin-top: -24px;
+}
 .mt32 {
   margin-top: 32px;
 }
@@ -5480,7 +5485,30 @@ footer.bg-dark a {
   }
 }
 /*!---------- 37. Client Specific ----------*/
+.link{
+  font-family: "Roboto", sans-serif;
+  opacity: .65;
+      -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.link:hover{
+  opacity: 1;
+}
 h5.bglaw-contact{
   letter-spacing: 0px;
   text-transform: uppercase;
+}
+.bglaw-history{
+  text-align: justify;
+  padding-right: 6em !important;
+}
+@media all and (max-width: 990px) {
+  nav.bg-dark .module.widget-handle{
+    border-top: none;
+  }
+  .module.widget-handle{
+    line-height: 85px;
+    max-height: 85px;
+  }
 }
