@@ -511,9 +511,9 @@ blockquote .author {
   -webkit-column-count: 2;
 }
 @media all and (max-width: 767px) {
-  br {
+/*  br {
     display: none;
-  }
+  }*/
   blockquote {
     font-size: 16px;
     line-height: 32px;
@@ -3850,7 +3850,6 @@ video {
   .play-button.large {
     width: 90px;
     height: 90px;
-    margin-top: -45px;
   }
   .play-button.large:before {
     margin-top: -14px;
@@ -5519,6 +5518,10 @@ footer.bg-dark a {
   }
 }
 /*!---------- 37. Client Specific ----------*/
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
 .separator{
   display: table-cell;
   height: 1px;
@@ -5599,4 +5602,13 @@ a.youtube i:hover{
     line-height: 85px;
     max-height: 85px;
   }
+}
+@media (max-width: 776px){
+  h1.uppercase{
+    letter-spacing: 0px;
+  }
+  .m-auto{
+  margin: 0 auto;
+  padding: 15px;
+}
 }
