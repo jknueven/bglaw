@@ -1567,7 +1567,7 @@ nav.bg-dark .module.widget-handle {
 }
 nav.bg-dark .nav-utility,
 nav.bg-dark .nav-bar {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid #232323;
 }
 nav.transparent.fixed.bg-dark {
   background: #292929;
@@ -5519,6 +5519,28 @@ footer.bg-dark a {
   }
 }
 /*!---------- 37. Client Specific ----------*/
+.separator{
+  display: table-cell;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 49%;
+}
+.sep_line{
+  border-color:#777;
+}
+.separator .sep_line{
+  height: 1px;
+  border-top: 1px solid #777;
+  display: block;
+  position: relative;
+  top: 1px;
+  width: 100%;
+}
+.divider-logo{
+  display: table;
+/*  background: url('../img/bieser_greer-logo-icon.png') no-repeat center top;
+*/}
 .link{
   font-family: "Roboto", sans-serif;
   opacity: .65;
@@ -5548,6 +5570,9 @@ p.small-line{
   border-bottom: .2em solid #e31d3b;
   display: inline-flex;
 }
+.bglaw-icon{
+  width: 100px;
+}
 .bglaw-aop{
   padding: 1px !important;
 }
@@ -5561,6 +5586,9 @@ a.linkedin i:hover{
   color:#007bb6;
 }
 a.google i:hover{
+  color:#dd4b39;
+}
+a.youtube i:hover{
   color:#dd4b39;
 }
 @media all and (max-width: 990px) {

@@ -275,47 +275,6 @@ $(document).ready(function() {
         }
     });
 
-    // Twitter Feed
-
-    $('.tweets-feed').each(function(index) {
-        $(this).attr('id', 'tweets-' + index);
-    }).each(function(index) {
-
-        function handleTweets(tweets) {
-            var x = tweets.length;
-            var n = 0;
-            var element = document.getElementById('tweets-' + index);
-            var html = '<ul class="slides">';
-            while (n < x) {
-                html += '<li>' + tweets[n] + '</li>';
-                n++;
-            }
-            html += '</ul>';
-            element.innerHTML = html;
-            return html;
-        }
-
-        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
-
-    });
-
-    // Instagram Feed
-
-    if($('.instafeed').length){
-    	jQuery.fn.spectragram.accessData = {
-			accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
-			clientID: 'fedaafacf224447e8aef74872d3820a1'
-		};
-    }
-
-    $('.instafeed').each(function() {
-    	var feedID = $(this).attr('data-user-name') + '_';
-        $(this).children('ul').spectragram('getUserFeed', {
-            query: feedID,
-            max: 12
-        });
-    });
-
     // Image Sliders
 
     $('.slider-all-controls').flexslider({
