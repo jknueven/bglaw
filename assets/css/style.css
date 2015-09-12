@@ -5609,5 +5609,8 @@ a.youtube i:hover{
   .m-auto{
   margin: 0 auto;
   padding: 15px;
-}
+  }
+  .bglaw-history{
+    padding-right: 0 !important;
+  }
 }
