@@ -5535,7 +5535,6 @@ footer.bg-dark a {
 .separator .sep_line{
   height: 1px;
   border-top: 1px solid #777;
-  display: block;
   position: relative;
   top: 1px;
   width: 100%;
@@ -5571,7 +5570,7 @@ h5.bglaw-contact{
 p.small-line{
   width: 8%;
   border-bottom: .2em solid #e31d3b;
-  display: inline-flex;
+  display: inline-block;
 }
 .bglaw-icon{
   width: 100px;
