@@ -1749,6 +1749,9 @@ textarea:focus {
   outline: none;
   border-bottom: 1px solid #ccc;
 }
+input.search::-webkit-input-placeholder{
+  color: #999999;
+}
 ::-webkit-input-placeholder {
   text-transform: uppercase;
   font-weight: bold;
