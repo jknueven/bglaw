@@ -4839,6 +4839,9 @@ footer.bg-dark a {
 .mr0 {
   margin-right: 0;
 }
+.mr16{
+  margin-left: 16px;
+}
 .mb0 {
   margin-bottom: 0 !important;
 }
