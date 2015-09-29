@@ -65,6 +65,9 @@ body.boxed-layout,
   left: 0;
   right: 0;
 }
+dd{
+  margin: 10px 0;
+}
 ul {
   list-style: none;
 }
