@@ -243,6 +243,9 @@ hr.short-thick {
 /*!---------- 3. TYPOGRAPHY ----------*/
 @import url(https://fonts.googleapis.com/css?family=PT+Serif);
 
+.mini-text{
+  font-size: 75%;
+}
 @media all and (max-width: 767px) {
   .text-center-xs {
     text-align: center !important;
