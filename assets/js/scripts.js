@@ -1032,7 +1032,7 @@ window.initializeMaps = function(){
                                 address.forEach(function(address){
                                     var markerGeoCoder;
 
-                                    markerImage = {url: window.mr_variant == undefined ? 'img/mapmarker.png' : '../img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)};
+                                    markerImage = {url: window.mr_variant == undefined ? 'assets/img/mapmarker.png' : '../assets/img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)};
                                     if(/(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)/.test(address) ){
                                         var latlong = address.split(','),
                                         marker = new google.maps.Marker({
