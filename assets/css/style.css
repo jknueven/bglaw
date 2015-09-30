@@ -756,6 +756,11 @@ footer.bg-dark li,
   background: #e31d3b;
   color: #fff;
 }
+a.btn-red:hover{
+  border: 2px solid #e31d3b !important;
+  background: #e31d3b !important;
+  color: #fff !important;
+}
 .btn-icon {
   width: 40px;
   height: 40px;
@@ -794,6 +799,7 @@ footer.bg-dark li,
   background: #e31d3b;
   color: #fff;
 }
+
 .btn-white,
 .image-bg .btn,
 .image-bg .btn:visited {
