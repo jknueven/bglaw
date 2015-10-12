@@ -878,6 +878,10 @@ nav {
 nav ul {
   margin-bottom: 0;
 }
+div.top-social .icon-sm {
+  font-size: 1.25em;
+}
+
 .module {
   display: inline-block;
   padding: 0 32px;
