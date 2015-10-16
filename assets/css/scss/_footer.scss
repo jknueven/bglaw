@@ -1,0 +1,56 @@
+/* =Footer
+----------------------------------------------- */
+footer.bg-dark a {
+  color: $color-white;
+}
+
+.footer-1 {
+  .logo {
+    max-height: 30px;
+  }
+  .sub {
+    opacity: .5;
+  }
+}
+
+.social-list {
+  margin: 0;
+}
+
+.image-bg .social-list a {
+  color: $color-white;
+}
+
+.bg-dark .social-list a, .image-bg .social-list a {
+  color: $color-white;
+  opacity: .5;
+}
+
+.bg-dark .social-list a:hover, .image-bg .social-list a {
+  opacity: 1;
+}
+
+.bg-light .social-list a {
+  color: #222;
+}
+
+.back-to-top {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.bg-dark .back-to-top {
+  border-color: $color-white;
+  &:active, &:focus {
+    color: $color-white;
+  }
+  &:hover {
+    background: none;
+  }
+}
