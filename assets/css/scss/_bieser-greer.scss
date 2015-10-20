@@ -42,6 +42,11 @@
   }
 }
 
+section.bg-primary li.active{
+  color: $bg-primary;
+  font-weight: bold;
+}
+
 .bglaw-header {
   font-family: 'PT Serif', serif;
   span {
