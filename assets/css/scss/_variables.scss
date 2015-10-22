@@ -12,5 +12,6 @@ $facebook: #3b5998;
 $google: #dd4b39;
 $linkedin: #007bb6;
 
-// FONTS
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700|Lato:300,400|Open+Sans:400,300,600|Roboto:400,100,300,700,500|PT+Serif);
+// FILTERS
+$bw: grayscale(1);
+$bw0: grayscale(0);
