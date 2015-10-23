@@ -3672,7 +3672,75 @@ video {
     z-index: 0;
   }
 }
-
+.play-button2 {
+  width: 80px;
+  height: 80px;
+  border: 2px solid $color-red;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  z-index: 4;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -8px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent $color-red;
+  }
+  &:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  &.dark {
+    border-color: #292929;
+    &:before {
+      border-color: transparent transparent transparent #292929;
+    }
+  }
+  &.large {
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+    &:before {
+      margin-top: -18px;
+      margin-left: -10px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 31.0px;
+      border-color: transparent transparent transparent $color-red;
+    }
+    &.dark:before {
+      border-color: transparent transparent transparent #292929;
+    }
+  }
+  &.inline {
+    position: relative;
+    top: 28px;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    display: inline-block;
+    z-index: 0;
+  }
+}
 @media all and (max-width: 767px) {
   .play-button {
     width: 65px;
