@@ -62,6 +62,10 @@ h1.large {
 h2 {
   font-size: 40px;
   line-height: 48px;
+  .tiny-text{
+    font-size: 50%;
+    line-height: 15px;
+  }
 }
 
 h3 {

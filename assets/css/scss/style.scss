@@ -600,7 +600,7 @@ nav.bg-dark {
     user-select: none;
     margin: 0;
     i {
-      font-size: 20px;
+      font-size: 2em;
       line-height: 53px;
       opacity: 0.5;
       transition: all 0.3s ease;
@@ -948,8 +948,8 @@ nav .cart-overview {
   .module.widget-handle {
     border-left: none;
     border-top: 1px solid #ccc;
-    line-height: 40px;
-    min-height: 40px;
+    line-height: 120px;
+    min-height: 120px;
     .menu {
       line-height: 40px;
       li {
@@ -1000,16 +1000,14 @@ nav .cart-overview {
     }
   }
   nav.bg-dark {
-    .module.widget-handle {
-      border-top: 1px solid #444;
+      border-top: none !important;
     }
     .mobile-toggle {
-      border-left: 1px solid #444 !important;
+      border-left: none !important;
     }
     .nav-open .mobile-toggle {
       border-bottom: 1px solid #444;
     }
-  }
 }
 
 nav {
