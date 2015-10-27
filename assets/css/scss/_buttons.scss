@@ -78,6 +78,10 @@ a.btn-red:hover {
 .btn-filled {
   background: $color-red;
   color: $color-white;
+  &:hover{
+    background: $bg-second;
+    color: $color-red !important;
+  }
 }
 
 .btn-white {
