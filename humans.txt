@@ -36,7 +36,7 @@ DESIGNERS:
   Ed Heltzel    @ginfuru
 
 TECHNOLOGY COLOPHON:
-  Wordpress, HTML5, CSS3, Twitter Bootstrap, JavaScript,
+  HTML5, CSS3, Twitter Bootstrap, JavaScript,
     Gulp, Bower, SASS, jQuery, Normalize, Modernizr
 
 ────────────────────────────────────────────────────────────────────────────────
