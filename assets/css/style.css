@@ -128,69 +128,75 @@ ul {
   /* line 36, scss/_global.scss */
   ul.bullets {
     list-style: inside; }
+  /* line 39, scss/_global.scss */
+  ul.color-red i {
+    color: #FF0600 !important; }
+  /* line 42, scss/_global.scss */
+  ul.listWhite li {
+    color: #848484 !important; }
 
-/* line 41, scss/_global.scss */
+/* line 47, scss/_global.scss */
 .main-container {
   clear: both; }
 
-/* line 45, scss/_global.scss */
+/* line 51, scss/_global.scss */
 hr {
   border: none;
   border-top: 1px solid #ccc;
   margin: 0 0 24px 0;
   width: 100%; }
-  /* line 50, scss/_global.scss */
+  /* line 56, scss/_global.scss */
   hr.short-thick {
     max-width: 50px;
     border-top: 5px solid #ccc;
     opacity: 1 !important; }
 
-/* line 58, scss/_global.scss */
+/* line 64, scss/_global.scss */
 .image-bg hr {
   border-color: #ffffff;
   opacity: .6; }
-  /* line 61, scss/_global.scss */
+  /* line 67, scss/_global.scss */
   .image-bg hr.color-red {
     border-color: #FF0600; }
-/* line 65, scss/_global.scss */
+/* line 71, scss/_global.scss */
 .image-bg.bg-light hr {
   border-color: #ccc;
   opacity: 1; }
 
-/* line 71, scss/_global.scss */
+/* line 77, scss/_global.scss */
 .bg-dark hr {
   border-color: #555555; }
 
-/* line 75, scss/_global.scss */
+/* line 81, scss/_global.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 79, scss/_global.scss */
+/* line 85, scss/_global.scss */
 .list-inline {
   margin-left: 0; }
-  /* line 81, scss/_global.scss */
+  /* line 87, scss/_global.scss */
   .list-inline > li {
     padding: 0 8px; }
-    /* line 83, scss/_global.scss */
+    /* line 89, scss/_global.scss */
     .list-inline > li:last-child {
       padding-right: 0; }
-    /* line 86, scss/_global.scss */
+    /* line 92, scss/_global.scss */
     .list-inline > li:first-child {
       padding-left: 0; }
 
-/* line 92, scss/_global.scss */
+/* line 98, scss/_global.scss */
 .bg-primary .list-inline i {
   color: #ee788a; }
 
-/* line 96, scss/_global.scss */
+/* line 102, scss/_global.scss */
 .overflow-hidden {
   overflow: hidden; }
 
-/* line 100, scss/_global.scss */
+/* line 106, scss/_global.scss */
 .display-block {
   display: block; }
 
-/* line 104, scss/_global.scss */
+/* line 110, scss/_global.scss */
 .show-grid {
   border: 1px dashed rgba(255, 255, 255, 0);
   padding: 8px;
@@ -198,62 +204,62 @@ hr {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   cursor: default; }
-  /* line 111, scss/_global.scss */
+  /* line 117, scss/_global.scss */
   .show-grid:hover {
     border-color: #222; }
 
-/* line 116, scss/_global.scss */
+/* line 122, scss/_global.scss */
 .right {
   right: 0; }
 
-/* line 120, scss/_global.scss */
+/* line 126, scss/_global.scss */
 .relative {
   position: relative;
   z-index: 2; }
 
-/* line 125, scss/_global.scss */
+/* line 131, scss/_global.scss */
 .clearboth {
   clear: both; }
 
-/* line 129, scss/_global.scss */
+/* line 135, scss/_global.scss */
 .spread-children * {
   display: inline-block;
   margin-left: 12px;
   margin-right: 12px; }
 
-/* line 135, scss/_global.scss */
+/* line 141, scss/_global.scss */
 .spread-children-large * {
   display: inline-block;
   margin-left: 24px;
   margin-right: 24px; }
 
-/* line 141, scss/_global.scss */
+/* line 147, scss/_global.scss */
 .container {
   position: relative; }
 
-/* line 145, scss/_global.scss */
+/* line 151, scss/_global.scss */
 .vnu {
   display: inline; }
 
 @media all and (max-width: 1100px) {
-  /* line 150, scss/_global.scss */
+  /* line 156, scss/_global.scss */
   .col-md-push-1 {
     left: 0; } }
 @media all and (max-width: 768px) {
-  /* line 156, scss/_global.scss */
+  /* line 162, scss/_global.scss */
   .pull-left-sm {
     float: left !important; }
 
-  /* line 159, scss/_global.scss */
+  /* line 165, scss/_global.scss */
   .overflow-hidden-xs {
     overflow: hidden; } }
 @media all and (max-width: 767px) {
-  /* line 165, scss/_global.scss */
+  /* line 171, scss/_global.scss */
   .spread-children * {
     margin-left: 6px;
     margin-right: 6px; }
 
-  /* line 169, scss/_global.scss */
+  /* line 175, scss/_global.scss */
   img.bw {
     max-height: 45px; } }
 /* line 4, scss/_typography.scss */

@@ -36,6 +36,12 @@ ul {
   &.bullets {
     list-style: inside;
   }
+  &.color-red i{
+    color: $color-red !important;
+  }
+  &.listWhite li{
+    color: $bieser-gray !important;
+  }
 }
 
 .main-container {
