@@ -93,9 +93,13 @@ img {
   overflow: hidden;
   position: relative;
   margin-bottom: 24px;
+  &:hover{
+    background-color: $offwhite;
+  }
   img {
     width: 100%;
     display: inline-block;
+    border-radius: 500px;
   }
   .label {
     position: absolute;

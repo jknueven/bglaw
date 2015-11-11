@@ -1648,26 +1648,30 @@ img {
   position: relative;
   margin-bottom: 24px; }
   /* line 96, scss/_titles.scss */
+  .image-tile:hover {
+    background-color: #f5f5f5; }
+  /* line 99, scss/_titles.scss */
   .image-tile img {
     width: 100%;
-    display: inline-block; }
-  /* line 100, scss/_titles.scss */
+    display: inline-block;
+    border-radius: 500px; }
+  /* line 104, scss/_titles.scss */
   .image-tile .label {
     position: absolute;
     top: 16px;
     right: 16px;
     z-index: 5; }
-  /* line 107, scss/_titles.scss */
+  /* line 111, scss/_titles.scss */
   .image-tile a:hover {
     -webkit-filter: grayscale(1);
             filter: grayscale(1); }
 
-/* line 113, scss/_titles.scss */
+/* line 117, scss/_titles.scss */
 .inner-title {
   -webkit-transition: all 0.3s ease;
           transition: all 0.3s ease;
   opacity: 1; }
-  /* line 114, scss/_titles.scss */
+  /* line 118, scss/_titles.scss */
   .inner-title:before {
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
@@ -1682,63 +1686,63 @@ img {
     background: linear-gradient(to bottom, transparent 0%, rgba(34, 34, 34, 0.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#292929', GradientType=0);
     pointer-events: none; }
-  /* line 127, scss/_titles.scss */
+  /* line 131, scss/_titles.scss */
   .inner-title:hover:before {
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2); }
-  /* line 130, scss/_titles.scss */
+  /* line 134, scss/_titles.scss */
   .inner-title .title {
     position: absolute;
     width: 100%;
     bottom: 40%;
     z-index: 5; }
-    /* line 135, scss/_titles.scss */
+    /* line 139, scss/_titles.scss */
     .inner-title .title h1, .inner-title .title h2, .inner-title .title h3, .inner-title .title h4, .inner-title .title h5, .inner-title .title h6, .inner-title .title p, .inner-title .title span, .inner-title .title li {
       color: #ffffff; }
-    /* line 138, scss/_titles.scss */
+    /* line 142, scss/_titles.scss */
     .inner-title .title h5 {
       font-weight: 600; }
-  /* line 144, scss/_titles.scss */
+  /* line 148, scss/_titles.scss */
   .inner-title:hover {
     opacity: .95; }
-  /* line 148, scss/_titles.scss */
+  /* line 152, scss/_titles.scss */
   .inner-title.hover-reveal:before {
     opacity: 0; }
-  /* line 151, scss/_titles.scss */
+  /* line 155, scss/_titles.scss */
   .inner-title.hover-reveal .title {
     opacity: 0;
     -webkit-transform: translate3d(0, 50px, 0);
             transform: translate3d(0, 50px, 0);
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease; }
-  /* line 157, scss/_titles.scss */
+  /* line 161, scss/_titles.scss */
   .inner-title.hover-reveal:hover .title {
     opacity: 1;
     -webkit-transform: translate3d(0, 0px, 0);
             transform: translate3d(0, 0px, 0); }
-  /* line 161, scss/_titles.scss */
+  /* line 165, scss/_titles.scss */
   .inner-title.hover-reveal:hover:before {
     opacity: 1; }
 
-/* line 168, scss/_titles.scss */
+/* line 172, scss/_titles.scss */
 .outer-title img {
   display: inline-block;
   margin-bottom: 12px; }
 
-/* line 173, scss/_titles.scss */
+/* line 177, scss/_titles.scss */
 .hover-tile {
   position: relative;
   overflow: hidden;
   background: #292929; }
-  /* line 177, scss/_titles.scss */
+  /* line 181, scss/_titles.scss */
   .hover-tile img {
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease; }
-  /* line 180, scss/_titles.scss */
+  /* line 184, scss/_titles.scss */
   .hover-tile:hover img {
     opacity: .5; }
-  /* line 183, scss/_titles.scss */
+  /* line 187, scss/_titles.scss */
   .hover-tile .hover-state {
     position: relative;
     -webkit-transform: translate3d(0, -50%, 0);
@@ -1751,108 +1755,108 @@ img {
     opacity: 0;
     width: 100%; }
 
-/* line 195, scss/_titles.scss */
+/* line 199, scss/_titles.scss */
 .hover-state {
   z-index: 99;
   padding: 0 40px;
   cursor: default; }
-  /* line 199, scss/_titles.scss */
+  /* line 203, scss/_titles.scss */
   .hover-state h1, .hover-state h2, .hover-state h3, .hover-state h4, .hover-state h5, .hover-state h6, .hover-state p, .hover-state span, .hover-state li {
     color: #ffffff; }
-  /* line 202, scss/_titles.scss */
+  /* line 206, scss/_titles.scss */
   .hover-state * {
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
     -webkit-transform: translate3d(0, 30px, 0) scale(1.05);
             transform: translate3d(0, 30px, 0) scale(1.05); }
 
-/* line 208, scss/_titles.scss */
+/* line 212, scss/_titles.scss */
 .hover-tile:hover .hover-state {
   opacity: 1; }
-  /* line 210, scss/_titles.scss */
+  /* line 214, scss/_titles.scss */
   .hover-tile:hover .hover-state * {
     -webkit-transform: translate3d(0, 0px, 0) scale(1);
             transform: translate3d(0, 0px, 0) scale(1); }
 
-/* line 215, scss/_titles.scss */
+/* line 219, scss/_titles.scss */
 .hover-state *:last-child {
   margin-bottom: 0; }
 
-/* line 219, scss/_titles.scss */
+/* line 223, scss/_titles.scss */
 .border-thick {
   border: 16px solid #ffffff;
   border-top: none; }
-  /* line 223, scss/_titles.scss */
+  /* line 227, scss/_titles.scss */
   .border-thick.col-sm-6:first-child {
     border-right: 8px solid #ffffff; }
-  /* line 226, scss/_titles.scss */
+  /* line 230, scss/_titles.scss */
   .border-thick.col-sm-6:last-child {
     border-left: 8px solid #ffffff; }
 
-/* line 234, scss/_titles.scss */
+/* line 238, scss/_titles.scss */
 .cover {
   margin: 0;
   padding: 0; }
-  /* line 237, scss/_titles.scss */
+  /* line 241, scss/_titles.scss */
   .cover h1, .cover h2, .cover h3, .cover h4, .cover h5, .cover h6, .cover p, .cover span, .cover li {
     color: #ffffff; }
 
-/* line 243, scss/_titles.scss */
+/* line 247, scss/_titles.scss */
 .image-bg.bg-light h1, .image-bg.bg-light h2, .image-bg.bg-light h3, .image-bg.bg-light h4, .image-bg.bg-light h5, .image-bg.bg-light h6 {
   color: #222222; }
-/* line 246, scss/_titles.scss */
+/* line 250, scss/_titles.scss */
 .image-bg.bg-light p, .image-bg.bg-light span, .image-bg.bg-light li {
   color: #777777; }
 
-/* line 252, scss/_titles.scss */
+/* line 256, scss/_titles.scss */
 .cover:first-child .fullscreen {
   max-height: 100%; }
-/* line 255, scss/_titles.scss */
+/* line 259, scss/_titles.scss */
 .cover.fullscreen .slides > li {
   height: 100vh; }
-/* line 258, scss/_titles.scss */
+/* line 262, scss/_titles.scss */
 .cover .slides li .container {
   z-index: 4;
   position: relative; }
-/* line 262, scss/_titles.scss */
+/* line 266, scss/_titles.scss */
 .cover .flex-control-nav {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: .9; }
-  /* line 267, scss/_titles.scss */
+  /* line 271, scss/_titles.scss */
   .cover .flex-control-nav:hover {
     opacity: 1; }
-/* line 271, scss/_titles.scss */
+/* line 275, scss/_titles.scss */
 .cover .align-bottom {
   padding: 0 32px;
   bottom: 16px; }
-/* line 275, scss/_titles.scss */
+/* line 279, scss/_titles.scss */
 .cover .align-top {
   padding: 0 32px; }
 
 @media all and (max-width: 767px) {
-  /* line 282, scss/_titles.scss */
+  /* line 286, scss/_titles.scss */
   .cover .align-bottom {
     padding: 0 15px; }
-    /* line 284, scss/_titles.scss */
+    /* line 288, scss/_titles.scss */
     .cover .align-bottom.relative-xs {
       position: relative;
       bottom: 0; }
-  /* line 289, scss/_titles.scss */
+  /* line 293, scss/_titles.scss */
   .cover.fullscreen {
     height: auto;
     padding: 80px 0; }
-    /* line 292, scss/_titles.scss */
+    /* line 296, scss/_titles.scss */
     .cover.fullscreen.image-slider {
       padding: 0; }
-    /* line 295, scss/_titles.scss */
+    /* line 299, scss/_titles.scss */
     .cover.fullscreen .container {
       top: 0;
       -ms-transform: none;
           transform: none;
       -webkit-transform: none; }
-    /* line 300, scss/_titles.scss */
+    /* line 304, scss/_titles.scss */
     .cover.fullscreen .slides li {
       height: auto;
       padding: 80px 0; } }
@@ -5791,26 +5795,35 @@ a.linkedin i:hover {
 a.google i:hover, a.youtube i:hover {
   color: #dd4b39; }
 
+/* line 110, scss/_bieser-greer.scss */
+.box-logo {
+  background: #f5f5f5;
+  -webkit-transition: background .75s linear;
+          transition: background .75s linear; }
+  /* line 113, scss/_bieser-greer.scss */
+  .box-logo:hover {
+    background: url("/assets/img/bieser_greer-logoDark.png") center/20%; }
+
 @media all and (max-width: 990px) {
-  /* line 112, scss/_bieser-greer.scss */
+  /* line 120, scss/_bieser-greer.scss */
   nav.bg-dark .module.widget-handle {
     border-top: none; }
 
-  /* line 115, scss/_bieser-greer.scss */
+  /* line 123, scss/_bieser-greer.scss */
   .module.widget-handle {
     line-height: 85px;
     max-height: 85px; } }
 @media (max-width: 776px) {
-  /* line 122, scss/_bieser-greer.scss */
+  /* line 130, scss/_bieser-greer.scss */
   h1.uppercase {
     letter-spacing: 0px; }
 
-  /* line 125, scss/_bieser-greer.scss */
+  /* line 133, scss/_bieser-greer.scss */
   .m-auto {
     margin: 0 auto;
     padding: 15px; }
 
-  /* line 129, scss/_bieser-greer.scss */
+  /* line 137, scss/_bieser-greer.scss */
   .bglaw-history {
     padding-right: 0 !important; } }
 

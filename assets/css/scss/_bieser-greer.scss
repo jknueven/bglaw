@@ -107,7 +107,15 @@ a {
     color: $google;
   }
 }
+.box-logo{
+  background: $offwhite;
+  transition: background .75s linear;
+  &:hover{
+    background: url('/assets/img/bieser_greer-logoDark.png') center/20%;
+  }
+}
 
+// VIEWPORT SPECIFIC
 @media all and (max-width: 990px) {
   nav.bg-dark .module.widget-handle {
     border-top: none;

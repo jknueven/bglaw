@@ -19,11 +19,11 @@ $(document).ready(function() {
         }
     });
 
-	if($('.inner-link').length){
-		$('.inner-link').smoothScroll({
-			offset: -55,
-			speed: 800
-		});
+    if($('.inner-link').length){
+        $('.inner-link').smoothScroll({
+            offset: -55,
+            speed: 800
+        });
     }
 
     // Update scroll variable for scrolling functions
@@ -148,30 +148,30 @@ $(document).ready(function() {
     // Offscreen Nav
 
     if($('.offscreen-toggle').length){
-    	$('body').addClass('has-offscreen-nav');
+        $('body').addClass('has-offscreen-nav');
     }
     else{
         $('body').removeClass('has-offscreen-nav');
     }
 
     $('.offscreen-toggle').click(function(){
-    	$('.main-container').toggleClass('reveal-nav');
-    	$('nav').toggleClass('reveal-nav');
-    	$('.offscreen-container').toggleClass('reveal-nav');
+        $('.main-container').toggleClass('reveal-nav');
+        $('nav').toggleClass('reveal-nav');
+        $('.offscreen-container').toggleClass('reveal-nav');
     });
 
     $('.main-container').click(function(){
-    	if($(this).hasClass('reveal-nav')){
-    		$(this).removeClass('reveal-nav');
-    		$('.offscreen-container').removeClass('reveal-nav');
-    		$('nav').removeClass('reveal-nav');
-    	}
+        if($(this).hasClass('reveal-nav')){
+            $(this).removeClass('reveal-nav');
+            $('.offscreen-container').removeClass('reveal-nav');
+            $('nav').removeClass('reveal-nav');
+        }
     });
 
     $('.offscreen-container a').click(function(){
-    	$('.offscreen-container').removeClass('reveal-nav');
-    	$('.main-container').removeClass('reveal-nav');
-    	$('nav').removeClass('reveal-nav');
+        $('.offscreen-container').removeClass('reveal-nav');
+        $('.main-container').removeClass('reveal-nav');
+        $('nav').removeClass('reveal-nav');
     });
 
     // Populate filters
@@ -241,10 +241,10 @@ $(document).ready(function() {
     // Instagram Feed
 
     if($('.instafeed').length){
-    	jQuery.fn.spectragram.accessData = {
-			accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
-			clientID: 'fedaafacf224447e8aef74872d3820a1'
-		};
+        jQuery.fn.spectragram.accessData = {
+            accessToken: '1406933036.fedaafa.feec3d50f5194ce5b705a1f11a107e0b',
+            clientID: 'fedaafacf224447e8aef74872d3820a1'
+        };
 
         $('.instafeed').each(function() {
             var feedID = $(this).attr('data-user-name') + '_';
@@ -318,8 +318,8 @@ $(document).ready(function() {
     // Lightbox gallery titles
 
     $('.lightbox-grid li a').each(function(){
-    	var galleryTitle = $(this).closest('.lightbox-grid').attr('data-gallery-title');
-    	$(this).attr('data-lightbox', galleryTitle);
+        var galleryTitle = $(this).closest('.lightbox-grid').attr('data-gallery-title');
+        $(this).attr('data-lightbox', galleryTitle);
     });
 
     // Prepare embedded video modals
@@ -343,42 +343,42 @@ $(document).ready(function() {
 
     // Multipurpose Modals
 
-    jQuery('. rdm_modal[modal-link]').remove();
+    jQuery('.rdm_modal[modal-link]').remove();
 
-    if($('. rdm_modal').length && (!jQuery('.modal-screen').length)){
+    if($('.rdm_modal').length && (!jQuery('.modal-screen').length)){
         // Add a div.modal-screen if there isn't already one there.
         var modalScreen = jQuery('<div />').addClass('modal-screen').appendTo('body');
 
     }
 
-    jQuery('. rdm_modal').click(function(){
+    jQuery('.rdm_modal').click(function(){
         jQuery(this).addClass('modal-acknowledged');
     });
 
     $('.modal-container:not([modal-link])').each(function(index) {
         if(jQuery(this).find('iframe[src]').length){
-        	jQuery(this).find('. rdm_modal').addClass('iframe-modal');
-        	var iframe = jQuery(this).find('iframe');
-        	iframe.attr('data-src',iframe.attr('src'));
+            jQuery(this).find('.rdm_modal').addClass('iframe-modal');
+            var iframe = jQuery(this).find('iframe');
+            iframe.attr('data-src',iframe.attr('src'));
             iframe.attr('src', '');
 
         }
         jQuery(this).find('.btn-modal').attr('modal-link', index);
 
         // Only clone and append to body if there isn't already one there
-        if(!jQuery('. rdm_modal[modal-link="'+index+'"]').length){
-            jQuery(this).find('. rdm_modal').clone().appendTo('body').attr('modal-link', index).prepend(jQuery('<i class="ti-close close-modal">'));
+        if(!jQuery('.rdm_modal[modal-link="'+index+'"]').length){
+            jQuery(this).find('.rdm_modal').clone().appendTo('body').attr('modal-link', index).prepend(jQuery('<i class="ti-close close-modal">'));
         }
     });
 
     $('.btn-modal').unbind('click').click(function(){
-    	var linkedModal = jQuery('. rdm_modal[modal-link="' + jQuery(this).attr('modal-link') + '"]');
+        var linkedModal = jQuery('.rdm_modal[modal-link="' + jQuery(this).attr('modal-link') + '"]');
         jQuery('.modal-screen').toggleClass('reveal-modal');
         if(linkedModal.find('iframe').length){
             if(linkedModal.find('iframe').attr('data-autoplay') === '1'){
                 var autoplayMsg = '&autoplay=1'
             }
-        	linkedModal.find('iframe').attr('src', (linkedModal.find('iframe').attr('data-src') + autoplayMsg));
+            linkedModal.find('iframe').attr('src', (linkedModal.find('iframe').attr('data-src') + autoplayMsg));
         }
         linkedModal.toggleClass('reveal-modal');
         return false;
@@ -386,16 +386,16 @@ $(document).ready(function() {
 
     // Autoshow modals
 
-	$('. rdm_modal[data-time-delay]').each(function(){
-		var modal = $(this);
-		var delay = modal.attr('data-time-delay');
-		modal.prepend($('<i class="ti-close close-modal">'));
-    	if(typeof modal.attr('data-cookie') != "undefined"){
-        	if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
+    $('.rdm_modal[data-time-delay]').each(function(){
+        var modal = $(this);
+        var delay = modal.attr('data-time-delay');
+        modal.prepend($('<i class="ti-close close-modal">'));
+        if(typeof modal.attr('data-cookie') != "undefined"){
+            if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
                 setTimeout(function(){
-        			modal.addClass('reveal-modal');
-        			$('.modal-screen').addClass('reveal-modal');
-        		},delay);
+                    modal.addClass('reveal-modal');
+                    $('.modal-screen').addClass('reveal-modal');
+                },delay);
             }
         }else{
             setTimeout(function(){
@@ -403,11 +403,11 @@ $(document).ready(function() {
                 $('.modal-screen').addClass('reveal-modal');
             },delay);
         }
-	});
+    });
 
     // Autoclose modals
 
-    $('. rdm_modal[data-hide-after]').each(function(){
+    $('.rdm_modal[data-hide-after]').each(function(){
         var modal = $(this);
         var delay = modal.attr('data-hide-after');
         if(typeof modal.attr('data-cookie') != "undefined"){
@@ -430,49 +430,49 @@ $(document).ready(function() {
     });
 
     jQuery('.close-modal:not(.modal-strip .close-modal)').unbind('click').click(function(){
-    	var modal = jQuery(this).closest('. rdm_modal');
+        var modal = jQuery(this).closest('.rdm_modal');
         modal.toggleClass('reveal-modal');
         if(typeof modal.attr('data-cookie') !== "undefined"){
             mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
         }
-    	if(modal.find('iframe').length){
+        if(modal.find('iframe').length){
             modal.find('iframe').attr('src', '');
         }
         jQuery('.modal-screen').removeClass('reveal-modal');
     });
 
     jQuery('.modal-screen').unbind('click').click(function(){
-        if(jQuery('. rdm_modal.reveal-modal').find('iframe').length){
-            jQuery('. rdm_modal.reveal-modal').find('iframe').attr('src', '');
+        if(jQuery('.rdm_modal.reveal-modal').find('iframe').length){
+            jQuery('.rdm_modal.reveal-modal').find('iframe').attr('src', '');
         }
-    	jQuery('. rdm_modal.reveal-modal').toggleClass('reveal-modal');
-    	jQuery(this).toggleClass('reveal-modal');
+        jQuery('.rdm_modal.reveal-modal').toggleClass('reveal-modal');
+        jQuery(this).toggleClass('reveal-modal');
     });
 
     jQuery(document).keyup(function(e) {
-		 if (e.keyCode == 27) { // escape key maps to keycode `27`
-            if(jQuery('. rdm_modal').find('iframe').length){
-                jQuery('. rdm_modal').find('iframe').attr('src', '');
+         if (e.keyCode == 27) { // escape key maps to keycode `27`
+            if(jQuery('.rdm_modal').find('iframe').length){
+                jQuery('.rdm_modal').find('iframe').attr('src', '');
             }
-			jQuery('. rdm_modal').removeClass('reveal-modal');
-			jQuery('.modal-screen').removeClass('reveal-modal');
-		}
-	});
+            jQuery('.rdm_modal').removeClass('reveal-modal');
+            jQuery('.modal-screen').removeClass('reveal-modal');
+        }
+    });
 
     // Modal Strips
 
     jQuery('.modal-strip').each(function(){
-    	if(!jQuery(this).find('.close-modal').length){
-    		jQuery(this).append(jQuery('<i class="ti-close close-modal">'));
-    	}
-    	var modal = jQuery(this);
+        if(!jQuery(this).find('.close-modal').length){
+            jQuery(this).append(jQuery('<i class="ti-close close-modal">'));
+        }
+        var modal = jQuery(this);
 
         if(typeof modal.attr('data-cookie') != "undefined"){
 
             if(!mr_cookies.hasItem(modal.attr('data-cookie'))){
-            	setTimeout(function(){
-            		modal.addClass('reveal-modal');
-            	},1000);
+                setTimeout(function(){
+                    modal.addClass('reveal-modal');
+                },1000);
             }
         }else{
             setTimeout(function(){
@@ -486,8 +486,8 @@ $(document).ready(function() {
         if(typeof modal.attr('data-cookie') != "undefined"){
             mr_cookies.setItem(modal.attr('data-cookie'), "true", Infinity);
         }
-    	jQuery(this).closest('.modal-strip').removeClass('reveal-modal');
-    	return false;
+        jQuery(this).closest('.modal-strip').removeClass('reveal-modal');
+        return false;
     });
 
 
@@ -586,7 +586,7 @@ $(document).ready(function() {
         $(this).attr('data-property', "{videoURL:'http://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
     });
 
-	if($('.player').length){
+    if($('.player').length){
         $('.player').each(function(){
 
             var section = $(this).closest('section');
@@ -607,11 +607,11 @@ $(document).ready(function() {
     });
 
     if($('.map-holder').length){
-    	$(window).scroll(function() {
-			if ($('.map-holder.interact').length) {
-				$('.map-holder.interact').removeClass('interact');
-			}
-		});
+        $(window).scroll(function() {
+            if ($('.map-holder.interact').length) {
+                $('.map-holder.interact').removeClass('interact');
+            }
+        });
     }
 
     // Countdown Timers
@@ -902,15 +902,15 @@ $(document).ready(function() {
     // Disqus Comments
 
     if($('.disqus-comments').length){
-		/* * * CONFIGURATION VARIABLES * * */
-		var disqus_shortname = $('.disqus-comments').attr('data-shortname');
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = $('.disqus-comments').attr('data-shortname');
 
-		/* * * DON'T EDIT BELOW THIS LINE * * */
-		(function() {
-			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		})();
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
     }
 
     // Load Google MAP API JS with callback to initialise when fully loaded
@@ -1150,7 +1150,7 @@ window.initializeMaps = function(){
                                 address.forEach(function(address){
                                     var markerGeoCoder;
 
-                                    markerImage = {url: window.mr_variant == undefined ? 'img/mapmarker.png' : '../img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)};
+                                    markerImage = {url: window.mr_variant == undefined ? 'assets/img/mapmarker.png' : '../assets/img/mapmarker.png', size: new google.maps.Size(50,50), scaledSize: new google.maps.Size(50,50)};
                                     if(/(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)/.test(address) ){
                                         var latlong = address.split(','),
                                         marker = new google.maps.Marker({
