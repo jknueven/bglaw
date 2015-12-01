@@ -5682,12 +5682,12 @@ footer.bg-dark a {
 
 /* line 16, scss/_bieser-greer.scss */
 .sep_line {
-  border-color: #777; }
+  border-color: #777777; }
 
 /* line 20, scss/_bieser-greer.scss */
 .separator .sep_line {
   height: 1px;
-  border-top: 1px solid #777;
+  border-top: 1px solid #777777;
   position: relative;
   top: 1px;
   width: 100%; }
@@ -5712,98 +5712,105 @@ img.bw {
     -webkit-filter: grayscale(0);
             filter: grayscale(0); }
 
-/* line 45, scss/_bieser-greer.scss */
+/* line 44, scss/_bieser-greer.scss */
+div.aop-links a {
+  color: #292929; }
+  /* line 46, scss/_bieser-greer.scss */
+  div.aop-links a:hover {
+    color: #FF0600; }
+
+/* line 50, scss/_bieser-greer.scss */
 .link {
   font-family: "Roboto", sans-serif;
   opacity: .65;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  /* line 51, scss/_bieser-greer.scss */
+  /* line 56, scss/_bieser-greer.scss */
   .link:hover {
     opacity: 1; }
 
-/* line 56, scss/_bieser-greer.scss */
+/* line 61, scss/_bieser-greer.scss */
 section.bg-primary li.active {
   color: #232323;
   font-weight: bold; }
 
-/* line 61, scss/_bieser-greer.scss */
+/* line 66, scss/_bieser-greer.scss */
 .bglaw-header {
   font-family: 'PT Serif', serif; }
-  /* line 63, scss/_bieser-greer.scss */
+  /* line 68, scss/_bieser-greer.scss */
   .bglaw-header span {
     font-family: 'PT Serif', serif; }
 
-/* line 68, scss/_bieser-greer.scss */
+/* line 73, scss/_bieser-greer.scss */
 h5.bglaw-contact {
   letter-spacing: 0px;
   text-transform: uppercase; }
 
-/* line 73, scss/_bieser-greer.scss */
+/* line 78, scss/_bieser-greer.scss */
 .bglaw-history {
   text-align: justify;
   padding-right: 6em !important; }
 
-/* line 78, scss/_bieser-greer.scss */
+/* line 83, scss/_bieser-greer.scss */
 .img-center {
   background-position: center center; }
 
-/* line 82, scss/_bieser-greer.scss */
+/* line 87, scss/_bieser-greer.scss */
 p.small-line {
   width: 8%;
   border-bottom: 0.2em solid #FF0600;
   display: inline-block; }
 
-/* line 88, scss/_bieser-greer.scss */
+/* line 93, scss/_bieser-greer.scss */
 .bglaw-icon {
   width: 100px; }
 
-/* line 92, scss/_bieser-greer.scss */
+/* line 97, scss/_bieser-greer.scss */
 .bglaw-aop {
   padding: 1px !important; }
 
-/* line 97, scss/_bieser-greer.scss */
+/* line 102, scss/_bieser-greer.scss */
 a.twitter i:hover {
   color: #00aced; }
-/* line 100, scss/_bieser-greer.scss */
+/* line 105, scss/_bieser-greer.scss */
 a.facebook i:hover {
   color: #3b5998; }
-/* line 103, scss/_bieser-greer.scss */
+/* line 108, scss/_bieser-greer.scss */
 a.linkedin i:hover {
   color: #007bb6; }
-/* line 106, scss/_bieser-greer.scss */
+/* line 111, scss/_bieser-greer.scss */
 a.google i:hover, a.youtube i:hover {
   color: #dd4b39; }
 
-/* line 110, scss/_bieser-greer.scss */
+/* line 115, scss/_bieser-greer.scss */
 .box-logo {
   background: #f5f5f5;
   -webkit-transition: background .75s linear;
           transition: background .75s linear; }
-  /* line 113, scss/_bieser-greer.scss */
+  /* line 118, scss/_bieser-greer.scss */
   .box-logo:hover {
     background: url("/assets/img/bieser_greer-logoDark.png") center/20%; }
 
 @media all and (max-width: 990px) {
-  /* line 120, scss/_bieser-greer.scss */
+  /* line 125, scss/_bieser-greer.scss */
   nav.bg-dark .module.widget-handle {
     border-top: none; }
 
-  /* line 123, scss/_bieser-greer.scss */
+  /* line 128, scss/_bieser-greer.scss */
   .module.widget-handle {
     line-height: 85px;
     max-height: 85px; } }
 @media (max-width: 776px) {
-  /* line 130, scss/_bieser-greer.scss */
+  /* line 135, scss/_bieser-greer.scss */
   h1.uppercase {
     letter-spacing: 0px; }
 
-  /* line 133, scss/_bieser-greer.scss */
+  /* line 138, scss/_bieser-greer.scss */
   .m-auto {
     margin: 0 auto;
     padding: 15px; }
 
-  /* line 137, scss/_bieser-greer.scss */
+  /* line 142, scss/_bieser-greer.scss */
   .bglaw-history {
     padding-right: 0 !important; } }
 

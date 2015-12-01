@@ -14,12 +14,12 @@
 }
 
 .sep_line {
-  border-color: #777;
+  border-color: $gray;
 }
 
 .separator .sep_line {
   height: 1px;
-  border-top: 1px solid #777;
+  border-top: 1px solid $gray;
   position: relative;
   top: 1px;
   width: 100%;
@@ -41,7 +41,12 @@ img.bw{
     filter: $bw0;
   }
 }
-
+div.aop-links a{
+  color: $darkGray;
+  &:hover{
+    color: $color-red;
+  }
+}
 .link {
   font-family: "Roboto", sans-serif;
   opacity: .65;
