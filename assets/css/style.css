@@ -2582,7 +2582,7 @@ img {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  padding: 0 15px;
+  padding: 0 1em;
   opacity: 0.5;
   position: relative; }
   /* line 767, scss/_ui-elements.scss */
