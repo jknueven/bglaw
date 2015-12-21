@@ -677,9 +677,9 @@ footer {
   height: 100vh;
   top: -50vh;
   -webkit-transition: all 0s ease !important;
-          transition: all 0s ease !important;
+  transition: all 0s ease !important;
   -webkit-transition: opacity 0.3s ease !important;
-          transition: opacity 0.3s ease !important;
+  transition: opacity 0.3s ease !important;
   -webkit-transform-style: preserve-3d; }
 /* line 123, scss/_layout.scss */
 .parallax:first-child .slides li > .background-image-holder, .parallax:first-child .background-image-holder {
@@ -1669,12 +1669,12 @@ img {
 /* line 117, scss/_titles.scss */
 .inner-title {
   -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 1; }
   /* line 118, scss/_titles.scss */
   .inner-title:before {
     -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
+    transition: all 0.5s ease;
     content: '';
     position: absolute;
     left: 0;
@@ -1715,7 +1715,7 @@ img {
     -webkit-transform: translate3d(0, 50px, 0);
             transform: translate3d(0, 50px, 0);
     -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
+    transition: all 0.3s ease; }
   /* line 161, scss/_titles.scss */
   .inner-title.hover-reveal:hover .title {
     opacity: 1;
@@ -1738,7 +1738,7 @@ img {
   /* line 181, scss/_titles.scss */
   .hover-tile img {
     -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
+    transition: all 0.3s ease; }
   /* line 184, scss/_titles.scss */
   .hover-tile:hover img {
     opacity: .5; }
@@ -1751,7 +1751,7 @@ img {
     z-index: 2;
     position: absolute;
     -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+    transition: all 0.3s ease;
     opacity: 0;
     width: 100%; }
 
@@ -1766,7 +1766,7 @@ img {
   /* line 206, scss/_titles.scss */
   .hover-state * {
     -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease;
+    transition: all 0.3s ease;
     -webkit-transform: translate3d(0, 30px, 0) scale(1.05);
             transform: translate3d(0, 30px, 0) scale(1.05); }
 
@@ -5706,7 +5706,7 @@ img.bw {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   -webkit-transition: all 0.6s ease;
-          transition: all 0.6s ease; }
+  transition: all 0.6s ease; }
   /* line 40, scss/_bieser-greer.scss */
   img.bw:hover {
     -webkit-filter: grayscale(0);
@@ -5794,34 +5794,43 @@ a.google i:hover, a.youtube i:hover {
   color: #dd4b39; }
 
 /* line 124, scss/_bieser-greer.scss */
+.social-media-link .icon {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  /* line 126, scss/_bieser-greer.scss */
+  .social-media-link .icon:hover {
+    color: #FF0600;
+    opacity: .8; }
+
+/* line 131, scss/_bieser-greer.scss */
 .box-logo {
   background: #f5f5f5;
   -webkit-transition: background .75s linear;
-          transition: background .75s linear; }
-  /* line 127, scss/_bieser-greer.scss */
+  transition: background .75s linear; }
+  /* line 134, scss/_bieser-greer.scss */
   .box-logo:hover {
     background: url("/assets/img/bieser_greer-logoDark.png") center/20%; }
 
 @media all and (max-width: 990px) {
-  /* line 134, scss/_bieser-greer.scss */
+  /* line 141, scss/_bieser-greer.scss */
   nav.bg-dark .module.widget-handle {
     border-top: none; }
 
-  /* line 137, scss/_bieser-greer.scss */
+  /* line 144, scss/_bieser-greer.scss */
   .module.widget-handle {
     line-height: 85px;
     max-height: 85px; } }
 @media (max-width: 776px) {
-  /* line 144, scss/_bieser-greer.scss */
+  /* line 151, scss/_bieser-greer.scss */
   h1.uppercase {
     letter-spacing: 0px; }
 
-  /* line 147, scss/_bieser-greer.scss */
+  /* line 154, scss/_bieser-greer.scss */
   .m-auto {
     margin: 0 auto;
     padding: 15px; }
 
-  /* line 151, scss/_bieser-greer.scss */
+  /* line 158, scss/_bieser-greer.scss */
   .bglaw-history {
     padding-right: 0 !important; } }
 

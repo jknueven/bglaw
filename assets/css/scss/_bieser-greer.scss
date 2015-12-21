@@ -121,6 +121,13 @@ a {
     color: $google;
   }
 }
+.social-media-link .icon{
+  transition: all 0.3s ease;
+  &:hover{
+    color: $color-red;
+    opacity: .8;
+  }
+}
 .box-logo{
   background: $offwhite;
   transition: background .75s linear;
