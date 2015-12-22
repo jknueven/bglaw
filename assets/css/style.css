@@ -5800,7 +5800,7 @@ a.google i:hover, a.youtube i:hover {
   /* line 126, scss/_bieser-greer.scss */
   .social-media-link .icon:hover {
     color: #FF0600;
-    opacity: .8; }
+    opacity: 1; }
 
 /* line 131, scss/_bieser-greer.scss */
 .box-logo {
