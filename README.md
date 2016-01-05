@@ -11,6 +11,6 @@ The original design and development was produced by [@ginfuru](https://github.co
 
 **See Issues or Waffle for all tasks/issues:**
 
-* ~Considering WordPress conversion~
+* ~~Considering WordPress conversion~~
 - [ ] port to Jekyll
 - [ ] update classes to add editable
