@@ -1,7 +1,7 @@
 ## Bieser Greer website
-
-[![Stories in Ready](https://badge.waffle.io/RainyDayMedia/bglaw.svg?label=in-review&title=Reivew)](http://waffle.io/RainyDayMedia/bglaw)
+[![Stories in Ready](https://badge.waffle.io/RainyDayMedia/bglaw.svg?label=ready&title=Ready)](http://waffle.io/RainyDayMedia/bglaw)
 [![Stories in Ready](https://badge.waffle.io/RainyDayMedia/bglaw.svg?label=In%20Progress&title=In%20Progress)](http://waffle.io/RainyDayMedia/bglaw)
+[![Stories in Ready](https://badge.waffle.io/RainyDayMedia/bglaw.svg?label=in-review&title=Review)](http://waffle.io/RainyDayMedia/bglaw)
 
 This is the *html/static* build of the next generation of the [bgllaw.com](http://bgllaw.com) OR [biesergreer.com](http://biesergreer.com).
 
