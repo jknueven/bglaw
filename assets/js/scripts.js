@@ -114,7 +114,7 @@ $(document).ready(function() {
             $(this).addClass('make-right');
         } else if (farRight > $(window).width() && $(this).hasClass('mega-menu')) {
             var isOnScreen = $(window).width() - menu.left;
-            var difference = $(this).outerWidth(true) - isOnScreen;
+            var difference     = $(this).outerWidth(true) - isOnScreen;
             $(this).css('margin-left', -(difference));
         }
     });
@@ -1308,5 +1308,3 @@ var mr_cookies = {
 /*\
 |*|  END COOKIE LIBRARY
 \*/
-
-
