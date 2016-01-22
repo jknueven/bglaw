@@ -2189,7 +2189,7 @@ img {
 
 /* line 325, scss/_ui-elements.scss */
 .bg-secondary .feature.boxed {
-  background: #ffffff; }
+  background: rgba(0, 0, 0, 0.1); }
 
 /* line 329, scss/_ui-elements.scss */
 .feature {
