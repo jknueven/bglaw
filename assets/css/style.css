@@ -7,7 +7,7 @@
 * Version:      1.0.0
 */
 /* =Mixins
------------------------------------------------ */
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700|Lato:300,400|Open+Sans:400,300,600|Roboto:400,100,300,700,500|PT+Serif);
 /* line 3, scss/_mixins.scss */
 .v-align-children {
@@ -90,7 +90,7 @@
   z-index: 2; }
 
 /* =Variables
------------------------------------------------ */
+
 /* line 1, scss/_global.scss */
 body {
   -webkit-font-smoothing: antialiased;
@@ -565,7 +565,7 @@ blockquote .author {
   .text-left-xs {
     text-align: left !important; } }
 /* =Layout
------------------------------------------------ */
+
 /* line 4, scss/_layout.scss */
 section {
   padding: 96px 0;
@@ -697,7 +697,7 @@ footer {
         transform: none !important;
     -webkit-transform: none !important; } }
 /* =Navigation
------------------------------------------------ */
+
 /* line 4, scss/_nav.scss */
 .nav-container {
   -webkit-backface-visibility: hidden;
@@ -1565,7 +1565,7 @@ nav.transparent.fixed.bg-dark {
 /* =Titles
 // IMAGE TITLES
 // INTROS
------------------------------------------------ */
+
 /* line 5, scss/_titles.scss */
 .page-title {
   padding: 0; }
@@ -1872,7 +1872,7 @@ img {
 // STATS
 // SLIDERS
 // IMAGE GALLERIES
------------------------------------------------ */
+
 /* line 17, scss/_ui-elements.scss */
 .rdm_modal {
   overflow: hidden;
@@ -3113,7 +3113,7 @@ img {
   left: 16px; }
 
 /* Forms
------------------------------------------------ */
+
 /* line 4, scss/_forms.scss */
 input, select, textarea {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -3468,7 +3468,7 @@ form iframe.mail-list-form {
     width: 100%;
     margin-bottom: 8px; } }
 /* =Buttons
------------------------------------------------ */
+
 /* line 4, scss/_buttons.scss */
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3642,7 +3642,7 @@ body.btn-rounded .btn {
     color: #FF0600; }
 
 /* =Video
------------------------------------------------ */
+
 /* line 3, scss/_video.scss */
 video:-webkit-full-screen,
 audio:-webkit-full-screen {
@@ -3978,7 +3978,7 @@ video {
   .fs-vid-background {
     display: none; } }
 /* =BLOG
------------------------------------------------ */
+
 /* line 7, scss/_blog.scss */
 .post-title .label {
   margin-right: 16px; }
@@ -4188,7 +4188,7 @@ video {
 // COUNTDOWN
 // MAPS
 // TWITTER
------------------------------------------------ */
+
 /* line 9, scss/_widgets.scss */
 .widget {
   margin-bottom: 48px; }
@@ -4656,7 +4656,7 @@ video {
   background: #FF0600 !important; }
 
 /* =Helpers
------------------------------------------------ */
+
 /* line 6, scss/_helpers.scss */
 .bg-primary {
   background: #FF0600 !important; }
@@ -5622,7 +5622,7 @@ video {
   .pb-xs-240 {
     padding-bottom: 240px !important; } }
 /* =Footer
------------------------------------------------ */
+
 /* line 3, scss/_footer.scss */
 footer.bg-dark a {
   color: #ffffff; }
@@ -5674,7 +5674,7 @@ footer.bg-dark a {
     background: none; }
 
 /* =Client Styles
------------------------------------------------ */
+
 /* line 3, scss/_bieser-greer.scss */
 .container-fluid {
   padding-left: 0;
