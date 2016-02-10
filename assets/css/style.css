@@ -5673,141 +5673,144 @@ footer.bg-dark a {
   */ }
 
 /* line 39, scss/_bieser-greer.scss */
-.spread-children img.bw {
+.spread-children li img {
   max-height: 5em;
   margin: 6px 0;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease; }
-  /* line 44, scss/_bieser-greer.scss */
-  .spread-children img.bw:hover {
+/* line 44, scss/_bieser-greer.scss */
+.spread-children .bw {
+  margin: 6px 0;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1); }
+  /* line 48, scss/_bieser-greer.scss */
+  .spread-children .bw:hover {
     -webkit-filter: grayscale(0);
             filter: grayscale(0); }
 
-/* line 49, scss/_bieser-greer.scss */
+/* line 54, scss/_bieser-greer.scss */
 div.aop-links a {
   color: #292929; }
-  /* line 51, scss/_bieser-greer.scss */
+  /* line 56, scss/_bieser-greer.scss */
   div.aop-links a:hover {
     color: #FF0600; }
 
-/* line 55, scss/_bieser-greer.scss */
+/* line 60, scss/_bieser-greer.scss */
 ul.rep-logos li {
   display: inline-block;
   margin-left: 10px;
   margin-right: 15px; }
 
-/* line 60, scss/_bieser-greer.scss */
+/* line 65, scss/_bieser-greer.scss */
 div.rep-logos li {
   margin-top: 25px;
   margin-bottom: 15px; }
 
-/* line 64, scss/_bieser-greer.scss */
+/* line 69, scss/_bieser-greer.scss */
 .link {
   font-family: "Roboto", sans-serif;
   opacity: .65;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  /* line 70, scss/_bieser-greer.scss */
+  /* line 75, scss/_bieser-greer.scss */
   .link:hover {
     opacity: 1; }
 
-/* line 75, scss/_bieser-greer.scss */
+/* line 80, scss/_bieser-greer.scss */
 section.bg-primary li.active {
   color: #232323;
   font-weight: bold; }
 
-/* line 79, scss/_bieser-greer.scss */
+/* line 84, scss/_bieser-greer.scss */
 div.cultureImage {
   background-position: 54% 50% !important; }
 
-/* line 83, scss/_bieser-greer.scss */
+/* line 88, scss/_bieser-greer.scss */
 .bglaw-header {
   font-family: 'PT Serif', serif; }
-  /* line 85, scss/_bieser-greer.scss */
+  /* line 90, scss/_bieser-greer.scss */
   .bglaw-header span {
     font-family: 'PT Serif', serif; }
 
-/* line 90, scss/_bieser-greer.scss */
+/* line 95, scss/_bieser-greer.scss */
 h5.bglaw-contact {
   letter-spacing: 0px;
   text-transform: uppercase; }
 
-/* line 95, scss/_bieser-greer.scss */
+/* line 100, scss/_bieser-greer.scss */
 .bglaw-history {
   text-align: justify;
   padding-right: 6em !important; }
 
-/* line 100, scss/_bieser-greer.scss */
+/* line 105, scss/_bieser-greer.scss */
 .img-center {
   background-position: center center; }
 
-/* line 104, scss/_bieser-greer.scss */
+/* line 109, scss/_bieser-greer.scss */
 p.small-line {
   width: 8%;
   border-bottom: 0.2em solid #FF0600;
   display: inline-block; }
 
-/* line 110, scss/_bieser-greer.scss */
+/* line 115, scss/_bieser-greer.scss */
 .bglaw-icon {
   width: 100px; }
 
-/* line 114, scss/_bieser-greer.scss */
+/* line 119, scss/_bieser-greer.scss */
 .bglaw-aop {
   padding: 1px !important; }
 
-/* line 119, scss/_bieser-greer.scss */
+/* line 124, scss/_bieser-greer.scss */
 a.twitter i:hover {
   color: #00aced; }
-/* line 122, scss/_bieser-greer.scss */
+/* line 127, scss/_bieser-greer.scss */
 a.facebook i:hover {
   color: #3b5998; }
-/* line 125, scss/_bieser-greer.scss */
+/* line 130, scss/_bieser-greer.scss */
 a.linkedin i:hover {
   color: #007bb6; }
-/* line 128, scss/_bieser-greer.scss */
+/* line 133, scss/_bieser-greer.scss */
 a.google i:hover, a.youtube i:hover {
   color: #dd4b39; }
 
-/* line 132, scss/_bieser-greer.scss */
+/* line 137, scss/_bieser-greer.scss */
 .social-media-link .icon {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  /* line 134, scss/_bieser-greer.scss */
+  /* line 139, scss/_bieser-greer.scss */
   .social-media-link .icon:hover {
     color: #FF0600;
     opacity: 1; }
 
-/* line 139, scss/_bieser-greer.scss */
+/* line 144, scss/_bieser-greer.scss */
 .box-logo {
   background: #f5f5f5;
   -webkit-transition: background .75s linear;
   transition: background .75s linear; }
-  /* line 142, scss/_bieser-greer.scss */
+  /* line 147, scss/_bieser-greer.scss */
   .box-logo:hover {
     background: url("/assets/img/bieser_greer-logoDark.png") center/20%; }
 
 @media all and (max-width: 990px) {
-  /* line 149, scss/_bieser-greer.scss */
+  /* line 154, scss/_bieser-greer.scss */
   nav.bg-dark .module.widget-handle {
     border-top: none; }
 
-  /* line 152, scss/_bieser-greer.scss */
+  /* line 157, scss/_bieser-greer.scss */
   .module.widget-handle {
     line-height: 85px;
     max-height: 85px; } }
 @media (max-width: 776px) {
-  /* line 159, scss/_bieser-greer.scss */
+  /* line 164, scss/_bieser-greer.scss */
   h1.uppercase {
     letter-spacing: 0px; }
 
-  /* line 162, scss/_bieser-greer.scss */
+  /* line 167, scss/_bieser-greer.scss */
   .m-auto {
     margin: 0 auto;
     padding: 15px; }
 
-  /* line 166, scss/_bieser-greer.scss */
+  /* line 171, scss/_bieser-greer.scss */
   .bglaw-history {
     padding-right: 0 !important; } }
 
