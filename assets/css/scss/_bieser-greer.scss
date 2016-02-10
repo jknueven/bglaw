@@ -11,34 +11,39 @@
   position: relative;
   vertical-align: middle;
   width: 49%;
+  .sep_line{
+    border-top: 1px soild $gray;
+    top: 1px;
+    width: 100%;
+  }
 }
 
 .sep_line {
   border-color: $gray;
 }
 
-.separator .sep_line {
-  height: 1px;
-  border-top: 1px solid $gray;
-  position: relative;
-  top: 1px;
-  width: 100%;
-}
+// .separator .sep_line {
+//   height: 1px;
+//   border-top: 1px solid $gray;
+//   position: relative;
+//   top: 1px;
+//   width: 100%;
+// }
 
 .divider-logo {
   display: table;
   /*  background: url('../img/bieser_greer-logo-icon.png') no-repeat center top;
   */
 }
-
-img.bw{
-  max-height: 50px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  filter: $bw;
-  transition: all 0.6s ease;
-  &:hover{
-    filter: $bw0;
+.spread-children{
+  img.bw{
+    max-height: 5em;
+    margin: 6px 0;
+    filter: $bw;
+    transition: all 0.6s ease;
+    &:hover{
+      filter: $bw0;
+    }
   }
 }
 div.aop-links a{
