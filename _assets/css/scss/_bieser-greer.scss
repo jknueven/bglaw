@@ -1,0 +1,174 @@
+//Client Styles
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.separator {
+  display: table-cell;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 49%;
+  .sep_line{
+    border-top: 1px soild $gray;
+    top: 1px;
+    width: 100%;
+  }
+}
+
+.sep_line {
+  border-color: $gray;
+}
+
+// .separator .sep_line {
+//   height: 1px;
+//   border-top: 1px solid $gray;
+//   position: relative;
+//   top: 1px;
+//   width: 100%;
+// }
+
+.divider-logo {
+  display: table;
+  /*  background: url('../img/bieser_greer-logo-icon.png') no-repeat center top;
+  */
+}
+.spread-children{
+  li img{
+    max-height: 5em;
+    margin: 6px 0;
+    transition: all 0.6s ease;
+  }
+  .bw{
+    margin: 6px 0;
+    filter: $bw;
+
+    &:hover{
+      filter: $bw0;
+    }
+
+  }
+}
+div.aop-links a{
+  color: $darkGray;
+  &:hover{
+    color: $color-red;
+  }
+}
+ul.rep-logos li{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+div.rep-logos li{
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.link {
+  font-family: "Roboto", sans-serif;
+  opacity: .65;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+section.bg-primary li.active{
+  color: $bg-primary;
+  font-weight: bold;
+}
+div.cultureImage{
+  background-position: 54% 50% !important;
+}
+
+.bglaw-header {
+  font-family: 'PT Serif', serif;
+  span {
+    font-family: 'PT Serif', serif;
+  }
+}
+
+h5.bglaw-contact {
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.bglaw-history {
+  text-align: justify;
+  padding-right: 6em !important;
+}
+
+.img-center {
+  background-position: center center;
+}
+
+p.small-line {
+  width: 8%;
+  border-bottom: .2em solid $color-red;
+  display: inline-block;
+}
+
+.bglaw-icon {
+  width: 100px;
+}
+
+.bglaw-aop {
+  padding: 1px !important;
+}
+
+a {
+  &.twitter i:hover {
+    color: $twitter;
+  }
+  &.facebook i:hover {
+    color: $facebook;
+  }
+  &.linkedin i:hover {
+    color: $linkedin;
+  }
+  &.google i:hover, &.youtube i:hover {
+    color: $google;
+  }
+}
+.social-media-link .icon{
+  transition: all 0.3s ease;
+  &:hover{
+    color: $color-red;
+    opacity: 1;
+  }
+}
+.box-logo{
+  background: $offwhite;
+  transition: background .75s linear;
+  &:hover{
+    background: url('/_assets/img/bieser_greer-logoDark.png') center/20%;
+  }
+}
+
+// VIEWPORT SPECIFIC
+@media all and (max-width: 990px) {
+  nav.bg-dark .module.widget-handle {
+    border-top: none;
+  }
+  .module.widget-handle {
+    line-height: 85px;
+    max-height: 85px;
+  }
+}
+
+@media (max-width: 776px) {
+  h1.uppercase {
+    letter-spacing: 0px;
+  }
+  .m-auto {
+    margin: 0 auto;
+    padding: 15px;
+  }
+  .bglaw-history {
+    padding-right: 0 !important;
+  }
+}

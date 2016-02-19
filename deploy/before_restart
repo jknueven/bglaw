@@ -25,14 +25,14 @@ if File.file? 'Rakefile'
   # run migrations if new ones have been added
   tasks << "db:migrate" if num_migrations > 0
 
-  # precompile assets
-  changed_assets = `git diff #{oldrev} #{newrev} --name-only -z app/assets`.split("\0")
-  tasks << "assets:precompile" if changed_assets.size > 0
+  # precompile _assets
+  changed__assets = `git diff #{oldrev} #{newrev} --name-only -z app/_assets`.split("\0")
+  tasks << "_assets:precompile" if changed__assets.size > 0
 
   run "#{rake_cmd} #{tasks.join(' ')} RAILS_ENV=#{RAILS_ENV}" if tasks.any?
 end
 
-# clear cached assets (unversioned/ignored files)
+# clear cached _assets (unversioned/ignored files)
 run "git clean -x -f -- public/stylesheets public/javascripts"
 
 # clean unversioned files from vendor/plugins (e.g. old submodules)
