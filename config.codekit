@@ -576,6 +576,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/10best.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20462,
+		"inputAbbreviatedPath": "\/assets\/img\/10best.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/10best.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/aifla-10best2015.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4189,6 +4200,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
 		},
+	"\/source\/blog-posts\/2013-11-01-12-bieser-greer-attorneys-reconized-as-best-laywers-in-america.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/blog-posts\/2013-11-01-12-bieser-greer-attorneys-reconized-as-best-laywers-in-america.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/source\/blog-posts\/2013-11-01-12-bieser-greer-attorneys-reconized-as-best-laywers-in-america.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -4734,7 +4754,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "bglaw.dev",
+	"externalServerAddress": "http:\/\/bglaw.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
