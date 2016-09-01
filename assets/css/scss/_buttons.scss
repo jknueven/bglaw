@@ -1,0 +1,184 @@
+//Buttons
+
+
+.btn {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 2px solid $color-red;
+  padding: 0 26px;
+  height: 40px;
+  min-width: 150px;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  color: $color-red;
+  text-align: center;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  margin-right: 8px;
+  margin-bottom: 24px;
+  &:last-child, &:last-of-type {
+    margin-right: 0;
+  }
+  &:hover {
+    background: $color-red;
+    color: $color-white;
+  }
+}
+
+a.btn-red:hover {
+  border: 2px solid $color-red !important;
+  background: $color-red !important;
+  color: $color-white !important;
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  min-width: 0;
+  padding: 0;
+  line-height: 38px;
+}
+
+.btn-lg {
+  height: 50px;
+  line-height: 46px;
+  min-width: 200px;
+}
+
+.btn-icon {
+  &.btn-lg {
+    width: 50px;
+    height: 50px;
+    line-height: 49px;
+    font-size: 24px;
+    min-width: 0;
+  }
+  &.btn-sm {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 13px;
+    min-width: 0;
+    padding: 0 0 0 1px !important;
+  }
+}
+
+.btn-sm {
+  height: 30px;
+  font-size: 11px;
+  line-height: 27px;
+  min-width: 0;
+}
+
+.btn-filled {
+  background: $color-red;
+  color: $color-white;
+  &:hover{
+    background: $bg-second;
+    color: $color-red !important;
+  }
+}
+
+.btn-white {
+  color: $color-white;
+  border-color: $color-white;
+}
+
+.image-bg .btn {
+  color: $color-white;
+  border-color: $color-white;
+  &:visited {
+    color: $color-white;
+    border-color: $color-white;
+  }
+}
+
+.btn-white:hover {
+  background: $color-white;
+  color: #222;
+}
+
+.image-bg {
+  .btn {
+    &:hover, &:visited:hover {
+      background: $color-white;
+      color: #222;
+    }
+    &.btn-filled {
+      border-color: $color-red;
+    }
+  }
+  .btn-filled {
+    &:visited {
+      border-color: $color-red;
+    }
+    &:hover {
+      border-color: $color-white;
+    }
+  }
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+body.btn-rounded .btn {
+  border-radius: 25px !important;
+}
+
+.bg-light {
+  .btn {
+    border-color: #222;
+    color: #222;
+    &:visited {
+      color: #222;
+      &:hover {
+        color: #222;
+      }
+    }
+  }
+  .btn-filled {
+    color: $color-white;
+    &:visited {
+      color: $color-white;
+    }
+  }
+}
+
+.btn:visited {
+  color: $color-red;
+}
+
+.btn-white:visited, .btn:visited:hover {
+  color: $color-white;
+}
+
+.btn-white:visited:hover {
+  color: #222;
+}
+
+.btn-filled:visited {
+  color: $color-white;
+}
+
+.btn.bg-dark {
+  color: $color-white;
+  border-color: #292929;
+  &:hover {
+    background: #434343;
+  }
+}
+
+.bg-primary .btn {
+  color: $color-white;
+  border-color: $color-white;
+  &:hover {
+    background: $color-white;
+    color: $color-red;
+  }
+}

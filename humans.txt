@@ -1,0 +1,34 @@
+ ____  ____  __  __  ____
+|  _ \|  _ \|  \/  |/ ___|_ __ _____      __
+| |_) | | | | |\/| | |   | '__/ _ \ \ /\ / /
+|  _ <| |_| | |  | | |___| | |  __/\ V  V /
+|_| \_\____/|_|  |_|\____|_|  \___| \_/\_/
+
+  Rainy Day Media (RDM) would like to acknowledge the
+  contributions of the following:
+
+Chefs:
+  Rainy Day Media               @rainydaymedia
+
+Sous Chefs:
+  Erin Paulson      The Copy Writer and Client coordination
+
+Designer & Developer:
+  Ed Heltzel        @ginfuru        ed@rainyday.media
+
+────────────────────────────────────────────────────────────────────────────────
+
+Contacts:
+
+  support@rainyday.media      — Help and general support
+  info@rainyday.media         — Press information
+  hello@rainyday.media        — Wanna talk geek
+
+────────────────────────────────────────────────────────────────────────────────
+Site:
+  Updated:    02-14-2016
+  Languages:  Jekyll, HTML5, CSS3 using SASS (SCSS flavor), JavaScript (CoffeeScript style)
+  Frameworks: Bootstrap - with custom SCSS mixins
+  JS Plugins: Modernizr and many others
+  IDE:        iTerm2, Sublime Text, Chrome DevTools
+  CLI:        Git, Gulp, Bower via CodeKit
