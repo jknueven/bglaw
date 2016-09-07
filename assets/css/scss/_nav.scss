@@ -15,8 +15,13 @@ nav {
   }
 }
 
-div.top-social .icon-sm {
-  font-size: 1.25em;
+div {
+  &.top-social {
+    font-size: 1.25em;
+  }
+  .icon-sm {
+    font-size: 1.25em;
+  }
 }
 
 .module {
